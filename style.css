@@ -1,0 +1,554 @@
+:root{
+    
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        color: #c10041;
+    }
+}
+::-webkit-scrollbar {
+     /*display: none; Hides the scrollbar */
+    width: 10px;
+  }
+  
+  /* Customize scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #628200; /* Color of the thumb */
+  }
+  
+  /* Customize scrollbar track */
+  ::-webkit-scrollbar-track {
+    background-color:#c10041;  /* Color of the track */
+  }
+
+body, html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    margin: 0;
+    height: 100%;
+   
+}
+
+                                                        /*//////////////////////////////////////For Fade In scroll//////////////////////////////////////*/
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+                                                                        /*////////////////////For Hero Section///////////////////////////*/
+#hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("images/landing_page2.jpg");
+    background-color: gray;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    padding-top: 15%;
+    scroll-snap-align: start;
+    overflow-y: hidden;
+}
+.intro-text{
+    color: #c10041;
+    display: inline-block;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Briem Hand", cursive;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    margin-top: 50px;
+}
+.lead {
+    font-family: "Briem Hand", cursive;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+                                                                  /*/////////////////////////////////////////////////////////////////FOR NAV-BAR//////////////////////////////////////////////////////////////*/
+.navbar-collapse {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; /* Center the background image */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50%;
+    padding-top: 50px;
+    overflow: hidden; /* Enable vertical scrolling if needed */
+    transition: transform 0.4s ease, opacity 0.4s ease; /* Add smooth transition */
+    transform: translateY(-100%); /* Initially hide the navbar off-screen */
+    opacity: 0; /* Initially hide the navbar */
+    
+}
+.navbar-nav{
+    transform: rotate(-20deg);
+    color: #000;
+    
+}
+.navbar-collapse.show {
+    transform: translateY(0); /* Show the navbar */
+    opacity: 1; /* Show the navbar */
+    
+}
+
+  
+.navbar-toggler {
+    position: relative; /* Change to relative */
+    z-index: 2;
+    border: none; /* Remove the border */
+    outline: none; /* Remove the outline */
+    box-shadow: none; /* Remove any box shadow */
+    background-color: transparent; /* Make the background transparent */
+    
+}
+
+.menu-text{
+    color: white;
+    font-size: 1em;
+    margin-bottom: 0px;
+}
+.menu-text:hover{
+    color: #c10041;
+}
+.menu-text.white {
+    color: black; /* text color for js*/
+}
+.menu-active {
+    overflow: hidden;
+  }
+  
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    
+    
+}
+.navbar-brand {
+    z-index: 2;
+    font-size: 1.3em;
+    font-family: "Briem Hand", cursive;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column; /*to make the img on top of txt*/
+    align-items: center;
+    text-align: center;
+}
+.logo{
+    align-items: center;
+    width: auto;
+    height: 50px;
+}
+.navbar-collapse .nav-link {
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.navbar-collapse .nav-link:hover {
+    color: red;
+}
+#navbar {
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    
+  }
+  
+
+ #navbar.hidden {
+    transform: translateY(-100%);
+  }
+
+.profile, .cart-shopping , .search-bar{
+    z-index: 2;
+}
+.profile p{
+    margin-bottom: 2px; 
+    font-size: 1em;
+}
+
+.cart-shopping p{
+   
+    margin-bottom: 2px; 
+    font-size: 1em;
+}
+.search-bar p{
+    margin-bottom: 2px; 
+    font-size: 1em;
+}
+
+                                                         /*/////////////////////////////////FOR ABOUT US SECTION//////////////////////////////////////*/
+#about{
+    background: black;
+    height: 100vh;
+    scroll-snap-align: start;
+    overflow-y: hidden;
+}
+.about-head{
+    color: #c10041;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-family: "Briem Hand", cursive;
+}
+                                                                         /*/////////////////////////////////////FOR PRODUCTS/////////////////////////////////*/
+#product{
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+    
+}
+#product .container{
+    padding: 2rem 5%;
+   
+}
+#product .container .image-container{
+    columns: 15rem 3;
+    gap: 1.4rem;
+}
+
+#product .container .image-container img{
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.7rem;
+    transition: transform 800ms;
+    transform-origin: 50% 50%;
+}
+#product .container .image-container img:hover{
+    transform: scale(1.5);
+}
+
+/*.hide-overflow{
+    overflow: hidden;
+}*/
+
+.product_intro{
+    color: #c10041;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-family: "Briem Hand", cursive;
+}
+                                            /*//////////////////////////////////////////////////////////////////Contacts///////////////////////////////////////////////////////*/
+
+#contact-us {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    height: fit-content;
+    scroll-snap-align: start;
+    
+}
+
+#contact-us h1 {
+    text-align: center;
+    color: #c10041;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-family: "Briem Hand", cursive;
+}
+#contact-us .contact-intro {
+    text-align: center;
+    
+}
+#contact-us p {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.book-format {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.left-page, .right-page {
+    flex: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #628200;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #c10041;
+}
+
+#contact-info, #social-media, #faq, #location, #hours {
+    margin-top: 20px;
+}
+
+#contact-info h3, #social-media h3, #faq h3, #location h3, #hours h3 {
+    color: #c10041;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-family: "Briem Hand", cursive;
+}
+
+#contact-info p, #social-media p, #faq p, #location p, #hours p {
+    margin: 10px 0;
+}
+
+iframe {
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+    height: 200px;
+}
+
+@media (max-width: 900px) {
+    .book-format {
+        flex-direction: column;
+    }
+}    
+                                                            /*/////////////////////////////////////////////Copyright////////////////////////////////////////*/  
+.copyright{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: "Briem Hand", cursive;
+}
+                                                                        /*//////////////////////////////////KEYFRAMES////////////////////////////////*/
+
+                                                                        /*///////////////////////////////ANIMATIONS//////////////////////////////////*/
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+    .card{
+        animation: none;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+  
+                                                                            /*//////////////////////////////RESOLUTION/////////////////////////////*/
+@media (min-width: 992px) {
+    .navbar-collapse {
+        flex-direction: row; /* Switch to horizontal layout on larger screens */
+        opacity: 1; /* Reset opacity for larger screens */
+    }
+}
+
+                                                                /*///////////////////////////////////////////////////ANDROID/////////////////////////////////////////*/
+
+@media (max-width: 576px) {
+    #hero-section{
+        padding-top: 30%;
+        scroll-snap-align: none;
+    }
+    .intro-text{
+        display: inline-block;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 3em;
+    }
+    .navbar-collapse {
+        background-size: cover;
+        background-position: top center;
+        padding-top: 65%;
+        padding-left: 30%;
+    }
+    .navbar-collapse .nav-link {
+        align-items: left;
+        justify-content: left;
+        letter-spacing: 2px;
+        font-size: 1.5em; /* Adjust the font size for smaller screens */
+    }
+    
+    .navbar-brand {
+        z-index: 2;
+        margin-bottom: 10px;
+        
+    }
+    .navbar-brand p{
+        font-size: small;
+    }
+    .menu-toggler{
+    
+        font-size: 20px;
+        padding: 0px !important;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .menu-text{
+        color: white;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .menu-text:hover{
+        color: red;
+    }
+    .menu-text.white {
+        color: black; /* text color for js*/
+    }
+   
+    .lead {
+        display: block;
+        align-items: left;
+      
+    }
+    #about{
+        height: 150vh;
+        scroll-snap-align: none;
+    }
+    #product{
+        scroll-snap-align: none;
+    }
+    #product .container .image-container img:hover{
+        transform: none;
+    }
+    #contact-us{
+       height: fit-content;
+       scroll-snap-align: none;
+    }
+    .profile{
+        font-size: 15px;
+        flex-direction: column;
+        
+    }
+    .profile p, .cart-shopping p, .search-bar p{
+        margin-top: 10px;
+    }
+
+    .cart-shopping{
+        font-size: 15px;
+        flex-direction: column;
+    
+        
+    }
+    .search-bar{
+        font-size: 15px;
+        flex-direction: column;
+        
+    }
+}
+@media (max-width: 379px){
+    .navbar-collapse {
+        padding-top: 45%;
+        padding-left: 35%;
+    }
+    .menu-toggler{
+        font-size: 15px;
+    }
+    .menu-text{
+        color: white;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .navbar-brand p{
+        font-size: 10px;
+    }
+    .profile{
+        font-size: 12px;
+        flex-direction: column;
+        
+    }
+    .profile p, .cart-shopping p, .search-bar p{
+        margin-top: 5px;
+    }
+
+    .cart-shopping{
+        font-size: 12px;
+        flex-direction: column;
+    
+        
+    }
+    .search-bar{
+        font-size: 12px;
+        flex-direction: column;
+    }
+    #hero-section{
+        padding-top: 30%;
+        display: block;
+        align-items: left;
+        text-align: left;
+    }
+    #about{
+        height: fit-content;
+    }
+}
+@media (max-width: 360px) {
+    .hidden {
+        opacity: 1;
+        transform: translateX(0);
+        transition: none;
+    }
+}
+                                                                    /*/////////////////////////////////////////////////////////////////Tablet////////////////////////////////////////////////////////*/
+@media (min-width: 600px) and (max-width: 1024px) {
+    #hero-section{
+        padding-top: 40%;
+    }
+    #about{
+        height: fit-content;
+    }
+    .navbar-collapse {
+        background-size: cover;
+        background-position: top center;
+        padding-top: 40%;
+        padding-left: 50%;
+    }
+}

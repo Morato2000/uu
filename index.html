@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--For Bootstrap-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!--For Google Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;900&family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap" rel="stylesheet">
+<!--For Icons-->
+<script src="https://kit.fontawesome.com/7c73cd64b2.js" crossorigin="anonymous"></script>
+<!---For CSS-->
+<link rel="stylesheet" href="style.css" type="text/css"/>
+
+<!--For Bootstrap js-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script defer src="app.js"></script>
+<title>The Winery</title>
+</head>
+<body>
+  <!--For Navbar-->
+
+  <nav class="navbar navbar-dark fixed-top" data-bs-theme="dark" id="navbar">
+    <div class="container-fluid d-flex align-items-center">
+        <!-- Toggler Button -->
+        <div class="d-flex  justify-content-start justify-content-md-start">
+            <button class="navbar-toggler m-4 menu-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-book fa-lg menu-icon" style="color: #6d8200;"></i>
+                <span class="menu-text">MENU</span>
+            </button>
+        </div>
+        <!-- Navbar Brand -->
+        <div class="d-flex  justify-content-center justify-content-md-center">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" class="logo" alt="Logo.jpg">
+                <p style="margin: 0;">L' Winery</p>
+            </a>
+        </div>
+        <!-- Right-aligned links -->
+        <div class="d-flex  justify-content-end justify-content-md-end">
+            <!-- Profile -->
+            <a class="profile me-3" href="https://example.com" style="display: flex; align-items: center;">
+                <i class="fa-solid fa-right-to-bracket fa-lg" style="color: #628200;"></i>
+                <p> PROFILE</p>
+            </a>
+            <!-- Cart -->
+            <a class="cart-shopping me-3" href="https://example.com" style="display: flex; align-items: center;">
+                <i class="fa-solid fa-cart-shopping fa-lg" style="color: #628200;"></i>
+                <p> CART</p>
+            </a>
+            <!-- Search Form -->
+            <a class="search-bar" href="https://example.com" style="display: flex; align-items: center;">
+                <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #628200;"></i>
+                <p> SEARCH</p>
+            </a>
+        </div>
+    </div>
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#">Store</a>
+            <a class="nav-link" href="#">Products</a>
+            <a class="nav-link" href="#">Tasting Room</a>
+            <a class="nav-link" href="#">Membership</a>
+            <a class="nav-link" href="#">News</a>
+            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="#">FAQs</a>
+        </div>
+    </div>
+</nav>
+
+ <!-- HERO SECTION -->
+<section id="hero-section">
+    <h1 class="intro-text hidden">Welcome To L'Winery</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead hidden ">Every bottle tells a story of passion, craftsmanship, and timeless elegance. Welcome to our digital cellar, a virtual haven for connoisseurs and enthusiasts to savor the finest wines crafted with dedication and expertise.</p>
+    </div>
+</section> 
+
+ <!-- ABOUT US -->
+ 
+<section id="about">
+     <div class="container col-xxl-8 px-4 py-5">
+    
+      <div class="row flex-lg-row align-items-center g-5 py-5">
+       
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="images/silhouette-man-normal-dark-v2.jpg" class="d-block mx-lg-auto img-fluid hidden" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6 hidden">
+          <h1 class="about-head">A New Generation Of Winemakers</h1>
+          <p class="lead ">At L'Winery, time is treasured, and they're grateful for your visit. Explore their heritage, meticulous winemaking process, and exquisite wines. Each bottle reflects generations of expertise, blending tradition with innovation. Dive into their story rooted in tradition and fueled by innovation. Discover a collection of wines promising unforgettable sensory experiences, crafted by passionate artisans.</p>
+        </div>
+      </div>
+    </div>
+</section>
+<!--Products Section-->
+<section id="product">
+  <div class="container">
+    <h1 class="product_intro">Products</h1><br><br>
+    <div class="image-container">
+      <img src="images/wine1.png" alt="Wine.png" >
+      <img src="images/wine2.jpeg" alt="Wine.png" >
+      <img src="images/wine3.jpeg" alt="Wine.png" >
+      <img src="images/wine4.jpeg" alt="Wine.png" >
+      <img src="images/wine5.jpeg" alt="Wine.png" >
+      <img src="images/wine6.jpeg" alt="Wine.png" >
+      <img src="images/wine7.jpg" alt="Wine.png" >
+      <img src="images/wine8.jpg" alt="Wine.png" >
+      <img src="images/winebox.jpg" alt="Wine.png" >
+    </div>
+  </div>
+</section>
+<!--Contact Section-->
+
+<section id="contact-us">
+  <h1>Contact Us</h1>
+  <p class="contact-intro">We're here to help! Reach out to us using the form below, or connect with us through our contact details. We look forward to hearing from you.</p>
+
+  <div class="book-format container">
+      <div class="left-page">
+          <form id="contact-form">
+              <label for="name">Your Name (Required)</label>
+              <input type="text" id="name" name="name" required>
+
+              <label for="email">Your Email (Required)</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="phone">Your Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject">
+
+              <label for="message">Message (Required)</label>
+              <textarea id="message" name="message" required></textarea>
+
+              <button type="submit">Submit</button>
+          </form>
+      </div>
+      <div class="right-page">
+          <div id="contact-info">
+              <h3>Direct Contact Information</h3>
+              <p>Email: <a href="mailto:contact@yourcompany.com">contact@yourcompany.com</a></p>
+              <p>Phone: <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+              <p>Address: 1234 Your Street, Your City, Your State, Your Country</p>
+          </div>
+
+          <div id="social-media">
+              <h3>Connect with us on social media:</h3>
+              <p>
+                  <a href="https://www.facebook.com/yourcompany">Facebook</a> |
+                  <a href="https://www.twitter.com/yourcompany">Twitter</a> |
+                  <a href="https://www.linkedin.com/company/yourcompany">LinkedIn</a> |
+                  <a href="https://www.instagram.com/yourcompany">Instagram</a>
+              </p>
+          </div>
+
+          <div id="hours">
+            <h3>Operating Hours</h3>
+            <p>Monday to Friday: 9:00 AM - 6:00 PM</p>
+            <p>Saturday: 10:00 AM - 4:00 PM</p>
+            <p>Sunday: Closed</p>
+        </div>
+
+
+      </div>
+     
+  </div>
+  <div class="both container">
+    <div id="location">
+      <h3>Visit Us</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434508425!2d144.96305781531096!3d-37.81362797975145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e0!2s1234+Your+Street%2C+Your+City%2C+Your+State%2C+Your+Country!5e0!3m2!1sen!2sau!4v1554975089836!5m2!1sen!2sau" width="600" height="450" style="border:0" allowfullscreen></iframe>
+      <p class="copyright"><a href="mailto:contact@yourcompany.com">2023 © The Entity</a></p>
+  </div>
+
+
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
